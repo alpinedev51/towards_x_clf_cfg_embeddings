@@ -1,21 +1,18 @@
-# Binary file analysis using Graph2Vec and unsupervised clustering
+# Towards Explaining Supervised Classifcation of CFG Embeddings for Binary Malware Analysis
 
-![Overview](./assets/binary_ML_overview.png)
+Code is based on the work by Liyanage et al., 2023 which can be found [here](https://github.com/MSUSEL/unsupervised-graph/tree/main/Unsupervised%20clustering%20of%20CFG%20Files)
 
-A stable reproducible capsule is available at "https://codeocean.com/capsule/6978226/tree"
+Work is also based on Portillo et al., 2024.
 
-The repository contains 'main.py' programs for
-1. Creating Control Flow Graphs (CFG) from binary files using 'angr' package.
-2. Create vector representation for CFGs using 'Graph2Vec' graph embedding.
-3. Unsupervised clustering algorithm training with hold out validation.
-4. Cluster prediction for Test dataset
+Dataset taken from [IEEE Dataport](https://dx.doi.org/10.21227/31pa-7837)
 
 ## Dataset
 
 ### Introduction
+
 Detecting malware from binary files is an important task in the research and development of the fields of cybersecurity 
 and machine learning. This dataset was curated to assess the viability of unsupervised machine learning clustering 
-techniques to identify differences between graph representations of benign software and malware. 
+techniques to identify differences between graph representations of benign software and malware.
 
 The dataset contains Control Flow Graphs benign and malicious programs. The dataset consists of benign operating system 
 files as well as malware provided by Hoplite industries(https://www.hopliteindustries.com).
@@ -30,8 +27,6 @@ Dataset is permanently archived at the following link.
 
 IEEE Dataport = 'https://dx.doi.org/10.21227/31pa-7837'
 ZONODO - 'https://doi.org/10.5281/zenodo.7630371'
-
-
 
 ### Composition
 
@@ -85,11 +80,3 @@ Types of Malware according to VIRUSTOTAL are given in the following table.
   - mal_hashes_test.txt (malware hash values for test set)
 - mal_hashes.txt (malware hash values)
 - class_labels_no_dupes.txt (class labels for benign and malware)
-
-### Usage
-The experiments showing curating and reading the dataset can be found at 
-"https://github.com/MSUSEL/unsupervised-graph/tree/main/Unsupervised%20clustering%20of%20CFG%20Files"
-
-A stable reproducible capsule is available at "https://codeocean.com/capsule/6978226/tree"
-
-<script src="https://codeocean.com/widget.js?slug=6978226" async></script> 
