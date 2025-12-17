@@ -1,0 +1,53 @@
+Binary file analysis using Graph2Vec and classification
+--- SKIPPING STEP 1 (Assuming D2V models already exist in ./results/d2v_models/) ---
+******************* STEP: 2 Supervised classification training with hold-out validation. *******************
+======================================
+Processing models for 256 dimensions
+======================================
+
+All classification results saved to results/trained_clf_models/supervised_classification_results_256.csv
+| Model   |   Dimensions |   CV-ROC-AUC |   ROC-AUC |   Accuracy |   Precision |   Recall |   F1-score |
+|:--------|-------------:|-------------:|----------:|-----------:|------------:|---------:|-----------:|
+| Dummy   |            8 |       0.5000 |    0.5000 |     0.5000 |      0.0000 |   0.0000 |     0.0000 |
+| LR      |            8 |       0.8896 |    0.9165 |     0.8415 |      0.9013 |   0.7670 |     0.8287 |
+| LSVC    |            8 |       0.8883 |    0.9152 |     0.8420 |      0.9101 |   0.7590 |     0.8277 |
+| Dummy   |           16 |       0.5000 |    0.5000 |     0.5000 |      0.0000 |   0.0000 |     0.0000 |
+| LR      |           16 |       0.9501 |    0.9656 |     0.9080 |      0.9368 |   0.8750 |     0.9049 |
+| LSVC    |           16 |       0.9499 |    0.9651 |     0.9020 |      0.9389 |   0.8600 |     0.8977 |
+| Dummy   |           32 |       0.5000 |    0.5000 |     0.5000 |      0.0000 |   0.0000 |     0.0000 |
+| LR      |           32 |       0.9617 |    0.9790 |     0.9250 |      0.9455 |   0.9020 |     0.9232 |
+| LSVC    |           32 |       0.9614 |    0.9782 |     0.9205 |      0.9459 |   0.8920 |     0.9182 |
+| Dummy   |           64 |       0.5000 |    0.5000 |     0.5000 |      0.0000 |   0.0000 |     0.0000 |
+| LR      |           64 |       0.9745 |    0.9842 |     0.9310 |      0.9546 |   0.9050 |     0.9292 |
+| LSVC    |           64 |       0.9743 |    0.9838 |     0.9245 |      0.9550 |   0.8910 |     0.9219 |
+| Dummy   |          128 |       0.5000 |    0.5000 |     0.5000 |      0.0000 |   0.0000 |     0.0000 |
+| LR      |          128 |       0.9669 |    0.9766 |     0.9230 |      0.9213 |   0.9250 |     0.9232 |
+| LSVC    |          128 |       0.9668 |    0.9765 |     0.9240 |      0.9444 |   0.9010 |     0.9222 |
+| Dummy   |          256 |       0.5000 |    0.5000 |     0.5000 |      0.0000 |   0.0000 |     0.0000 |
+| LR      |          256 |       0.9834 |    0.9891 |     0.9480 |      0.9686 |   0.9260 |     0.9468 |
+| LSVC    |          256 |       0.9831 |    0.9889 |     0.9480 |      0.9746 |   0.9200 |     0.9465 |
+
+All model summaries saved to results/trained_clf_models/supervised_model_summaries_256.csv
+
+--- Best Model Hyperparameter Summaries (256)---
+| Model   |   Dimensions | Strategy      | Penalty   | C                     | Solver   | Max_Iter   | Loss          | Criterion   | Max_Depth   | Max_Features   | Min_Samples_Split   | Min_Samples_Leaf   |
+|:--------|-------------:|:--------------|:----------|:----------------------|:---------|:-----------|:--------------|:------------|:------------|:---------------|:--------------------|:-------------------|
+| Dummy   |            8 | most_frequent | N/A       | N/A                   | N/A      | N/A        | N/A           | N/A         | N/A         | N/A            | N/A                 | N/A                |
+| LR      |            8 | N/A           | l2        | 6.366859160799429     | saga     | 10000.0    | N/A           | N/A         | N/A         | N/A            | N/A                 | N/A                |
+| LSVC    |            8 | N/A           | l2        | 0.37253938395788866   | N/A      | 10000.0    | squared_hinge | N/A         | N/A         | N/A            | N/A                 | N/A                |
+| Dummy   |           16 | most_frequent | N/A       | N/A                   | N/A      | N/A        | N/A           | N/A         | N/A         | N/A            | N/A                 | N/A                |
+| LR      |           16 | N/A           | l2        | 0.5414413211338525    | saga     | 10000.0    | N/A           | N/A         | N/A         | N/A            | N/A                 | N/A                |
+| LSVC    |           16 | N/A           | l2        | 0.008260808399079604  | N/A      | 10000.0    | squared_hinge | N/A         | N/A         | N/A            | N/A                 | N/A                |
+| Dummy   |           32 | most_frequent | N/A       | N/A                   | N/A      | N/A        | N/A           | N/A         | N/A         | N/A            | N/A                 | N/A                |
+| LR      |           32 | N/A           | N/A       | 0.0019517224641449498 | saga     | 10000.0    | N/A           | N/A         | N/A         | N/A            | N/A                 | N/A                |
+| LSVC    |           32 | N/A           | l2        | 0.17885301261862016   | N/A      | 10000.0    | squared_hinge | N/A         | N/A         | N/A            | N/A                 | N/A                |
+| Dummy   |           64 | most_frequent | N/A       | N/A                   | N/A      | N/A        | N/A           | N/A         | N/A         | N/A            | N/A                 | N/A                |
+| LR      |           64 | N/A           | l2        | 0.08777815504719653   | saga     | 10000.0    | N/A           | N/A         | N/A         | N/A            | N/A                 | N/A                |
+| LSVC    |           64 | N/A           | l2        | 0.004982752357076452  | N/A      | 10000.0    | squared_hinge | N/A         | N/A         | N/A            | N/A                 | N/A                |
+| Dummy   |          128 | most_frequent | N/A       | N/A                   | N/A      | N/A        | N/A           | N/A         | N/A         | N/A            | N/A                 | N/A                |
+| LR      |          128 | N/A           | l2        | 14.528246637516036    | lbfgs    | 10000.0    | N/A           | N/A         | N/A         | N/A            | N/A                 | N/A                |
+| LSVC    |          128 | N/A           | l2        | 0.37253938395788866   | N/A      | 10000.0    | squared_hinge | N/A         | N/A         | N/A            | N/A                 | N/A                |
+| Dummy   |          256 | most_frequent | N/A       | N/A                   | N/A      | N/A        | N/A           | N/A         | N/A         | N/A            | N/A                 | N/A                |
+| LR      |          256 | N/A           | l2        | 0.033205591037519584  | saga     | 10000.0    | N/A           | N/A         | N/A         | N/A            | N/A                 | N/A                |
+| LSVC    |          256 | N/A           | l2        | 0.0019145111285710716 | N/A      | 10000.0    | squared_hinge | N/A         | N/A         | N/A            | N/A                 | N/A                |
+******************* Process Finished *******************

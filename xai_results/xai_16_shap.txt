@@ -1,0 +1,27 @@
+==========Processing best model for Logistic Regression==========
+--- SHAP Value Computation ---
+SHAP Expected Value (Base Rate): 0.91565
+
+==========Processing best model for Linear SVC==========
+--- SHAP Value Computation ---
+SHAP Expected Value (Base Rate): 0.22249
+
+==========Processing best model for RBF SVC==========
+--- SHAP Value Computation ---
+SHAP Expected Value (Base Rate): 0.45000
+
+==========Processing best model for Polynomial SVC==========
+--- SHAP Value Computation ---
+SHAP Expected Value (Base Rate): 0.42000
+
+==========Processing best model for Sigmoid SVC==========
+--- SHAP Value Computation ---
+SHAP Expected Value (Base Rate): 0.43000
+
+==========Processing best model for Simple Decision Tree==========
+--- SHAP Value Computation ---
+SHAP Expected Value (Base Rate): 0.50893
+
+==========Processing best model for Random Forest==========
+--- SHAP Value Computation ---
+SHAP Expected Value (Base Rate): 0.50973

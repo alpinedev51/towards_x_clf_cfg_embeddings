@@ -1,0 +1,9 @@
+Model,Dimensions,Strategy,Penalty,C,Solver,Max_Iter,Hidden_Layers,Activation,Alpha (L2),Learning_Rate_Init,Batch_Size,Loss,Kernel,Gamma,Criterion,Max_Depth,Max_Features,Min_Samples_Split,Num_Estimators,Learning_Rate,L2_Regularization
+Dummy,128,most_frequent,,,,,,,,,,,,,,,,,,,
+LR,128,,l2,10.0,lbfgs,1000.0,,,,,,,,,,,,,,,
+MLP,128,,,,,,"(128,)",tanh,0.001,0.01,128.0,,,,,,,,,,
+LSVC,128,,l2,1.0,,5000.0,,,,,,squared_hinge,,,,,,,,,
+RBF-SVC,128,,,26.92646910086177,,,,,,,,,rbf,0.0032476735706274485,,,,,,,
+DT,128,,,,,,,,,,,,,,entropy,8.0,log2,20.0,,,
+RF,128,,,,,,,,,,,,,,entropy,16.0,0.1,,200.0,,
+HGBC,128,,,,,200.0,,,,,,,,,,32.0,,,,0.1,0.1

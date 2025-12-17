@@ -1,0 +1,93 @@
+Binary file analysis using Graph2Vec and classification
+--- SKIPPING STEP 1 (Assuming D2V models already exist in ./results/d2v_models/) ---
+******************* STEP: 2 Supervised classification training with hold-out validation. *******************
+Start supervised training
+
+======================================
+Processing models for 256 dimensions
+======================================
+--- Getting Training Data ---
+Successfully loaded Train data from CSV for 256 dims.
+--- Getting Testing Data ---
+Successfully loaded Test data from CSV for 256 dims.
+--- Training Dummy for 256 dimensions ---
+  Saved best Dummy model to results/trained_clf_models/Dummy/Dummy_model_256dims.pkl
+  Evaluating Dummy on test set...
+  Test Metrics: {'Accuracy': 0.5, 'Precision': 0.0, 'Recall': 0.0, 'F1-score': 0.0, 'ROC-AUC': 0.5, 'Model': 'Dummy', 'Dimensions': 256, 'CV-ROC-AUC': 0.5}
+--- Training RBF-SVC for 256 dimensions ---
+  Best CV ROC-AUC: 0.9677
+  Best Hyperparameters: {'classifier__C': np.float64(14.528246637516036), 'classifier__gamma': np.float64(0.0070689749506246055)}
+  Saved best RBF-SVC model to results/trained_clf_models/RBF-SVC/RBF-SVC_model_256dims.pkl
+  Evaluating RBF-SVC on test set...
+  Test Metrics: {'Accuracy': 0.9575, 'Precision': 0.9682702149437052, 'Recall': 0.946, 'F1-score': 0.9570055639858371, 'ROC-AUC': 0.986542, 'Model': 'RBF-SVC', 'Dimensions': 256, 'CV-ROC-AUC': np.float64(0.9676966666666669)}
+--- Training Poly-SVC for 256 dimensions ---
+  Best CV ROC-AUC: 0.9696
+  Best Hyperparameters: {'classifier__C': np.float64(0.04661686413912769), 'classifier__degree': 4, 'classifier__gamma': np.float64(0.0012087541473056963)}
+  Saved best Poly-SVC model to results/trained_clf_models/Poly-SVC/Poly-SVC_model_256dims.pkl
+  Evaluating Poly-SVC on test set...
+  Test Metrics: {'Accuracy': 0.5015, 'Precision': 1.0, 'Recall': 0.003, 'F1-score': 0.005982053838484547, 'ROC-AUC': 0.9780639999999999, 'Model': 'Poly-SVC', 'Dimensions': 256, 'CV-ROC-AUC': np.float64(0.9696333333333333)}
+--- Training Sig-SVC for 256 dimensions ---
+  Best CV ROC-AUC: 0.9750
+  Best Hyperparameters: {'classifier__C': np.float64(0.9163741808778786), 'classifier__gamma': np.float64(0.0015339162591163618)}
+  Saved best Sig-SVC model to results/trained_clf_models/Sig-SVC/Sig-SVC_model_256dims.pkl
+  Evaluating Sig-SVC on test set...
+  Test Metrics: {'Accuracy': 0.9045, 'Precision': 0.9798339264531435, 'Recall': 0.826, 'F1-score': 0.8963646228974498, 'ROC-AUC': 0.984535, 'Model': 'Sig-SVC', 'Dimensions': 256, 'CV-ROC-AUC': np.float64(0.9750244444444445)}
+
+All classification results saved to results/trained_clf_models/supervised_classification_results_256.csv
+| Model    |   Dimensions |   CV-ROC-AUC |   ROC-AUC |   Accuracy |   Precision |   Recall |   F1-score |
+|:---------|-------------:|-------------:|----------:|-----------:|------------:|---------:|-----------:|
+| Dummy    |            8 |       0.5000 |    0.5000 |     0.5000 |      0.0000 |   0.0000 |     0.0000 |
+| RBF-SVC  |            8 |       0.9540 |    0.9777 |     0.9465 |      0.9524 |   0.9400 |     0.9461 |
+| Poly-SVC |            8 |       0.9260 |    0.9461 |     0.8380 |      0.7596 |   0.9890 |     0.8593 |
+| Sig-SVC  |            8 |       0.8820 |    0.9123 |     0.8320 |      0.8539 |   0.8010 |     0.8266 |
+| Dummy    |           16 |       0.5000 |    0.5000 |     0.5000 |      0.0000 |   0.0000 |     0.0000 |
+| RBF-SVC  |           16 |       0.9657 |    0.9796 |     0.9090 |      0.9436 |   0.8700 |     0.9053 |
+| Poly-SVC |           16 |       0.9537 |    0.9740 |     0.8935 |      0.9254 |   0.8560 |     0.8894 |
+| Sig-SVC  |           16 |       0.9473 |    0.9633 |     0.8655 |      0.9518 |   0.7700 |     0.8513 |
+| Dummy    |           32 |       0.5000 |    0.5000 |     0.5000 |      0.0000 |   0.0000 |     0.0000 |
+| RBF-SVC  |           32 |       0.9769 |    0.9904 |     0.9515 |      0.9669 |   0.9350 |     0.9507 |
+| Poly-SVC |           32 |       0.9702 |    0.9869 |     0.9430 |      0.9586 |   0.9260 |     0.9420 |
+| Sig-SVC  |           32 |       0.9573 |    0.9760 |     0.8860 |      0.9563 |   0.8090 |     0.8765 |
+| Dummy    |           64 |       0.5000 |    0.5000 |     0.5000 |      0.0000 |   0.0000 |     0.0000 |
+| RBF-SVC  |           64 |       0.9795 |    0.9926 |     0.9600 |      0.9713 |   0.9480 |     0.9595 |
+| Poly-SVC |           64 |       0.9739 |    0.9884 |     0.9560 |      0.9615 |   0.9500 |     0.9557 |
+| Sig-SVC  |           64 |       0.9715 |    0.9814 |     0.9075 |      0.9605 |   0.8500 |     0.9019 |
+| Dummy    |          128 |       0.5000 |    0.5000 |     0.5000 |      0.0000 |   0.0000 |     0.0000 |
+| RBF-SVC  |          128 |       0.9744 |    0.9885 |     0.9430 |      0.9644 |   0.9200 |     0.9417 |
+| Poly-SVC |          128 |       0.9695 |    0.9831 |     0.9430 |      0.9615 |   0.9230 |     0.9418 |
+| Sig-SVC  |          128 |       0.9540 |    0.9662 |     0.8685 |      0.9478 |   0.7800 |     0.8557 |
+| Dummy    |          256 |       0.5000 |    0.5000 |     0.5000 |      0.0000 |   0.0000 |     0.0000 |
+| RBF-SVC  |          256 |       0.9677 |    0.9865 |     0.9575 |      0.9683 |   0.9460 |     0.9570 |
+| Poly-SVC |          256 |       0.9696 |    0.9781 |     0.5015 |      1.0000 |   0.0030 |     0.0060 |
+| Sig-SVC  |          256 |       0.9750 |    0.9845 |     0.9045 |      0.9798 |   0.8260 |     0.8964 |
+
+All model summaries saved to results/trained_clf_models/supervised_model_summaries_256.csv
+
+--- Best Model Hyperparameter Summaries (256)---
+| Model    |   Dimensions | Strategy      | Kernel   | C                   | Gamma                 | Degree   |
+|:---------|-------------:|:--------------|:---------|:--------------------|:----------------------|:---------|
+| Dummy    |            8 | most_frequent | N/A      | N/A                 | N/A                   | N/A      |
+| RBF-SVC  |            8 | N/A           | rbf      | 4.5705630998014515  | 0.24810409748678125   | N/A      |
+| Poly-SVC |            8 | N/A           | N/A      | 70.72114131472235   | 0.0070689749506246055 | 3.0      |
+| Sig-SVC  |            8 | N/A           | sigmoid  | 7.183758655813988   | 0.0019777828512462727 | N/A      |
+| Dummy    |           16 | most_frequent | N/A      | N/A                 | N/A                   | N/A      |
+| RBF-SVC  |           16 | N/A           | rbf      | 14.528246637516036  | 0.0070689749506246055 | N/A      |
+| Poly-SVC |           16 | N/A           | N/A      | 1.1435780278433403  | 0.05342937261279776   | 2.0      |
+| Sig-SVC  |           16 | N/A           | sigmoid  | 1.0907475835157696  | 0.004809461967501573  | N/A      |
+| Dummy    |           32 | most_frequent | N/A      | N/A                 | N/A                   | N/A      |
+| RBF-SVC  |           32 | N/A           | rbf      | 14.528246637516036  | 0.0070689749506246055 | N/A      |
+| Poly-SVC |           32 | N/A           | N/A      | 1.1435780278433403  | 0.05342937261279776   | 2.0      |
+| Sig-SVC  |           32 | N/A           | sigmoid  | 7.183758655813988   | 0.0019777828512462727 | N/A      |
+| Dummy    |           64 | most_frequent | N/A      | N/A                 | N/A                   | N/A      |
+| RBF-SVC  |           64 | N/A           | rbf      | 14.528246637516036  | 0.0070689749506246055 | N/A      |
+| Poly-SVC |           64 | N/A           | N/A      | 70.72114131472235   | 0.0070689749506246055 | 3.0      |
+| Sig-SVC  |           64 | N/A           | sigmoid  | 7.183758655813988   | 0.0019777828512462727 | N/A      |
+| Dummy    |          128 | most_frequent | N/A      | N/A                 | N/A                   | N/A      |
+| RBF-SVC  |          128 | N/A           | rbf      | 14.528246637516036  | 0.0070689749506246055 | N/A      |
+| Poly-SVC |          128 | N/A           | N/A      | 70.72114131472235   | 0.0070689749506246055 | 3.0      |
+| Sig-SVC  |          128 | N/A           | sigmoid  | 0.9163741808778786  | 0.0015339162591163618 | N/A      |
+| Dummy    |          256 | most_frequent | N/A      | N/A                 | N/A                   | N/A      |
+| RBF-SVC  |          256 | N/A           | rbf      | 14.528246637516036  | 0.0070689749506246055 | N/A      |
+| Poly-SVC |          256 | N/A           | N/A      | 0.04661686413912769 | 0.0012087541473056963 | 4.0      |
+| Sig-SVC  |          256 | N/A           | sigmoid  | 0.9163741808778786  | 0.0015339162591163618 | N/A      |
+******************* Process Finished *******************

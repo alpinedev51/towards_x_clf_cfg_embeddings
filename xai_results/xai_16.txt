@@ -1,0 +1,123 @@
+Binary file analysis using Graph2Vec and classification
+--- SKIPPING STEP 1 (Assuming D2V models already exist in ./results/d2v_models/) ---
+******************* STEP: 3 XAI *******************
+--- Getting Training Data ---
+Successfully loaded Train data from CSV for 16 dims.
+--- Getting Test Data ---
+Successfully loaded Test data from CSV for 16 dims.
+
+==========Processing best model for Logistic Regression==========
+-----Quick Model Summary-----
+
+--- LR Coefficients (Magnitude on Scaled Features): ---
+Feature         | Coefficient  | Direction
+Feature 14     : 2.05869 | Positive (+)
+Feature 3      : -2.00840 | Negative (-)
+Feature 7      : 1.98902 | Positive (+)
+Feature 11     : 1.84492 | Positive (+)
+Feature 6      : 1.77676 | Positive (+)
+Feature 12     : 1.52925 | Positive (+)
+Feature 13     : -1.36814 | Negative (-)
+Feature 2      : 1.17390 | Positive (+)
+Feature 16     : 0.60257 | Positive (+)
+Feature 8      : -0.51473 | Negative (-)
+
+--- Permutation Importance ---
+Feature         | Mean Drop in Accuracy  | Std Dev
+Feature 12      | 0.10877
+Feature 7       | 0.09096
+Feature 13      | 0.08328
+Feature 14      | 0.06755
+Feature 11      | 0.06179
+Feature 3       | 0.05862
+Feature 6       | 0.05177
+Feature 2       | 0.03503
+Feature 16      | 0.01489
+Feature 9       | 0.00709
+Skipping Shapley value computations...
+
+==========Processing best model for Multi-layer Perceptron==========
+-----Quick Model Summary-----
+
+--- Permutation Importance ---
+Feature         | Mean Drop in Accuracy  | Std Dev
+Feature 13      | 0.05996
+Feature 12      | 0.05937
+Feature 7       | 0.04467
+Feature 6       | 0.04228
+Feature 3       | 0.03685
+Feature 16      | 0.02769
+Feature 14      | 0.01705
+Feature 11      | 0.01526
+Feature 5       | 0.01355
+Feature 10      | 0.01341
+Skipping Shapley value computations...
+
+==========Processing best model for Linear SVC==========
+-----Quick Model Summary-----
+
+--- LSVC Coefficients (Magnitude on Scaled Features): ---
+Feature         | Coefficient  | Direction
+Feature 14     : 0.55264 | Positive (+)
+Feature 3      : -0.54318 | Negative (-)
+Feature 7      : 0.52510 | Positive (+)
+Feature 11     : 0.52238 | Positive (+)
+Feature 6      : 0.47606 | Positive (+)
+Feature 12     : 0.41729 | Positive (+)
+Feature 13     : -0.34842 | Negative (-)
+Feature 2      : 0.31141 | Positive (+)
+Feature 16     : 0.18524 | Positive (+)
+Feature 9      : -0.12953 | Negative (-)
+
+--- Permutation Importance ---
+Feature         | Mean Drop in Accuracy  | Std Dev
+Feature 12      | 0.10636
+Feature 7       | 0.08640
+Feature 13      | 0.07357
+Feature 14      | 0.06615
+Feature 11      | 0.06309
+Feature 3       | 0.05713
+Feature 6       | 0.04934
+Feature 2       | 0.03232
+Feature 16      | 0.01710
+Feature 9       | 0.00637
+Skipping Shapley value computations...
+
+==========Processing best model for RBF SVC==========
+-----Quick Model Summary-----
+
+--- Permutation Importance ---
+Feature         | Mean Drop in Accuracy  | Std Dev
+Feature 7       | 0.08828
+Feature 13      | 0.08423
+Feature 12      | 0.07604
+Feature 3       | 0.06140
+Feature 11      | 0.03683
+Feature 14      | 0.03397
+Feature 6       | 0.02935
+Feature 2       | 0.02181
+Feature 10      | 0.01044
+Feature 9       | 0.00896
+Skipping Shapley value computations...
+
+==========Processing best model for Polynomial SVC==========
+-----Quick Model Summary-----
+
+--- Permutation Importance ---
+Feature         | Mean Drop in Accuracy  | Std Dev
+Feature 15      | 0.05813
+Feature 13      | 0.05558
+Feature 16      | 0.05126
+Feature 10      | 0.04572
+Feature 14      | 0.03613
+Feature 3       | 0.03464
+Feature 2       | 0.03143
+Feature 6       | 0.02299
+Feature 5       | 0.02104
+Feature 12      | 0.01776
+Skipping Shapley value computations...
+
+==========Processing best model for Sigmoid SVC==========
+-----Quick Model Summary-----
+
+--- Permutation Importance ---

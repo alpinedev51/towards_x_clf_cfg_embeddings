@@ -1,0 +1,506 @@
+Binary file analysis using Graph2Vec and classification
+--- SKIPPING STEP 1 (Assuming D2V models already exist in ./results/d2v_models/) ---
+******************* STEP: 3 XAI *******************
+
+## 8 Dimensions
+
+--- Getting Training Data ---
+Successfully loaded Train data from CSV for 8 dims.
+--- Getting Test Data ---
+Successfully loaded Test data from CSV for 8 dims.
+
+==========Processing best model for Logistic Regression==========
+-----Quick Model Summary-----
+**Top 5 Largest Coefficients (Magnitude on Scaled Features):**
+    Feature 6: -2.60477
+    Feature 8: -1.59567
+    Feature 3: -1.53706
+    Feature 1: 1.38136
+    Feature 7: -1.14636
+    Feature 2: -1.09188
+    Feature 4: 0.52317
+    Feature 5: -0.18481
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.84929
+
+==========Processing best model for Linear Support Vector Classifier==========
+-----Quick Model Summary-----
+**Top 5 Largest Coefficients (Magnitude on Scaled Features):**
+    Feature 6: -0.86765
+    Feature 8: -0.56382
+    Feature 3: -0.47982
+    Feature 1: 0.43032
+    Feature 7: -0.33256
+    Feature 2: -0.32578
+    Feature 4: 0.12326
+    Feature 5: -0.10288
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.25529
+
+==========Processing best model for RBF Support Vector Classifier==========
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.50000
+
+==========Processing best model for Polynomial Support Vector Classifier==========
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.75000
+
+==========Processing best model for Sigmoid Support Vector Classifier==========
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.60000
+
+==========Processing best model for Simple Decision Tree==========
+-----Quick Model Summary-----
+**Top 5 Feature Importances (Entropy Reduction):**
+    Feature 1: 0.22204
+    Feature 6: 0.21289
+    Feature 4: 0.18301
+    Feature 3: 0.15882
+    Feature 5: 0.11194
+    Feature 7: 0.04938
+    Feature 2: 0.03949
+    Feature 8: 0.02244
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.49517
+
+---
+
+## 16 Dimensions
+
+--- Getting Training Data ---
+Successfully loaded Train data from CSV for 16 dims.
+--- Getting Test Data ---
+Successfully loaded Test data from CSV for 16 dims.
+
+==========Processing best model for Logistic Regression==========
+-----Quick Model Summary-----
+**Top 5 Largest Coefficients (Magnitude on Scaled Features):**
+    Feature 14: 2.05869
+    Feature 3: -2.00840
+    Feature 7: 1.98902
+    Feature 11: 1.84492
+    Feature 6: 1.77676
+    Feature 12: 1.52925
+    Feature 13: -1.36814
+    Feature 2: 1.17390
+    Feature 16: 0.60257
+    Feature 8: -0.51473
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.91565
+
+==========Processing best model for Linear Support Vector Classifier==========
+-----Quick Model Summary-----
+**Top 5 Largest Coefficients (Magnitude on Scaled Features):**
+    Feature 14: 0.55264
+    Feature 3: -0.54318
+    Feature 7: 0.52510
+    Feature 11: 0.52238
+    Feature 6: 0.47606
+    Feature 12: 0.41729
+    Feature 13: -0.34842
+    Feature 2: 0.31141
+    Feature 16: 0.18524
+    Feature 9: -0.12953
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.22249
+
+==========Processing best model for RBF Support Vector Classifier==========
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.45000
+
+==========Processing best model for Polynomial Support Vector Classifier==========
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.42000
+
+==========Processing best model for Sigmoid Support Vector Classifier==========
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.43000
+
+==========Processing best model for Simple Decision Tree==========
+-----Quick Model Summary-----
+**Top 5 Feature Importances (Entropy Reduction):**
+    Feature 3: 0.27065
+    Feature 12: 0.18083
+    Feature 11: 0.11524
+    Feature 14: 0.11414
+    Feature 6: 0.09512
+    Feature 2: 0.04855
+    Feature 10: 0.03869
+    Feature 4: 0.03014
+    Feature 7: 0.02776
+    Feature 13: 0.02743
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.50893
+
+---
+
+## 32 Dimensions
+
+--- Getting Training Data ---
+Successfully loaded Train data from CSV for 32 dims.
+--- Getting Test Data ---
+Successfully loaded Test data from CSV for 32 dims.
+
+==========Processing best model for Logistic Regression==========
+
+
+-----Quick Model Summary-----
+**Top 5 Largest Coefficients (Magnitude on Scaled Features):**
+    Feature 3: 2.21591
+    Feature 28: 2.09418
+    Feature 24: 1.43740
+    Feature 1: 1.27228
+    Feature 17: -1.21837
+    Feature 14: -1.21589
+    Feature 15: -1.19426
+    Feature 27: -1.16845
+    Feature 31: -1.15881
+    Feature 13: -1.14104
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.73543
+Sorry but MLP is too complex to feasibly calculate Shaply values for
+
+==========Processing best model for Linear Support Vector Classifier==========
+
+
+-----Quick Model Summary-----
+**Top 5 Largest Coefficients (Magnitude on Scaled Features):**
+    Feature 3: 0.66925
+    Feature 28: 0.61898
+    Feature 24: 0.44981
+    Feature 31: -0.38405
+    Feature 14: -0.37507
+    Feature 27: -0.37170
+    Feature 17: -0.36763
+    Feature 1: 0.36319
+    Feature 15: -0.35267
+    Feature 13: -0.34063
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.22808
+
+==========Processing best model for RBF Support Vector Classifier==========
+
+
+-----Quick Model Summary-----
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.47000
+
+==========Processing best model for Polynomial Support Vector Classifier==========
+
+
+-----Quick Model Summary-----
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.47000
+
+==========Processing best model for Sigmoid Support Vector Classifier==========
+
+
+-----Quick Model Summary-----
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.43000
+
+==========Processing best model for Simple Decision Tree==========
+
+
+-----Quick Model Summary-----
+**Top 5 Feature Importances (Entropy Reduction):**
+    Feature 28: 0.19566
+    Feature 24: 0.17292
+    Feature 3: 0.12886
+    Feature 17: 0.08595
+    Feature 19: 0.08507
+    Feature 31: 0.06364
+    Feature 15: 0.03157
+    Feature 13: 0.03101
+    Feature 14: 0.02750
+    Feature 25: 0.02017
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.49079
+Sorry but RF is too complex to feasibly calculate Shaply values for
+Sorry but HGBC is too complex to feasibly calculate Shaply values for
+
+## 64 Dimensions
+
+--- Getting Training Data ---
+Successfully loaded Train data from CSV for 64 dims.
+--- Getting Test Data ---
+Successfully loaded Test data from CSV for 64 dims.
+
+==========Processing best model for Logistic Regression==========
+
+
+-----Quick Model Summary-----
+**Top 5 Largest Coefficients (Magnitude on Scaled Features):**
+    Feature 41: -1.66557
+    Feature 34: -1.19389
+    Feature 37: -1.11416
+    Feature 50: 0.92259
+    Feature 18: -0.91375
+    Feature 2: -0.89885
+    Feature 40: -0.87831
+    Feature 10: 0.87599
+    Feature 30: -0.79566
+    Feature 12: -0.78114
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.24461
+Sorry but MLP is too complex to feasibly calculate Shaply values for
+
+==========Processing best model for Linear Support Vector Classifier==========
+
+
+-----Quick Model Summary-----
+**Top 5 Largest Coefficients (Magnitude on Scaled Features):**
+    Feature 41: -0.46047
+    Feature 34: -0.34783
+    Feature 37: -0.32895
+    Feature 50: 0.27929
+    Feature 18: -0.27236
+    Feature 2: -0.26853
+    Feature 10: 0.24859
+    Feature 40: -0.24735
+    Feature 30: -0.24653
+    Feature 12: -0.22508
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.05930
+
+==========Processing best model for RBF Support Vector Classifier==========
+
+
+-----Quick Model Summary-----
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.50000
+
+==========Processing best model for Polynomial Support Vector Classifier==========
+
+
+-----Quick Model Summary-----
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.49000
+
+==========Processing best model for Sigmoid Support Vector Classifier==========
+
+
+-----Quick Model Summary-----
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.42000
+
+==========Processing best model for Simple Decision Tree==========
+
+
+-----Quick Model Summary-----
+**Top 5 Feature Importances (Entropy Reduction):**
+    Feature 12: 0.22790
+    Feature 41: 0.22372
+    Feature 34: 0.08565
+    Feature 54: 0.06912
+    Feature 50: 0.05505
+    Feature 60: 0.03961
+    Feature 62: 0.03718
+    Feature 18: 0.02985
+    Feature 58: 0.01942
+    Feature 2: 0.01925
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.52860
+Sorry but RF is too complex to feasibly calculate Shaply values for
+Sorry but HGBC is too complex to feasibly calculate Shaply values for
+
+## 128 Dimensions
+
+--- Getting Training Data ---
+Successfully loaded Train data from CSV for 128 dims.
+--- Getting Test Data ---
+Successfully loaded Test data from CSV for 128 dims.
+
+==========Processing best model for Logistic Regression==========
+
+
+-----Quick Model Summary-----
+**Top 5 Largest Coefficients (Magnitude on Scaled Features):**
+    Feature 14: 6.52568
+    Feature 2: -6.35411
+    Feature 95: -5.73157
+    Feature 106: -5.71234
+    Feature 23: 5.54003
+    Feature 62: 5.32516
+    Feature 6: 5.22986
+    Feature 91: 5.15637
+    Feature 54: 5.05792
+    Feature 63: -5.04214
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.47910
+Sorry but MLP is too complex to feasibly calculate Shaply values for
+
+==========Processing best model for Linear Support Vector Classifier==========
+
+
+-----Quick Model Summary-----
+**Top 5 Largest Coefficients (Magnitude on Scaled Features):**
+    Feature 2: -1.37807
+    Feature 14: 1.31321
+    Feature 23: 1.30084
+    Feature 95: -1.24006
+    Feature 91: 1.19613
+    Feature 62: 1.15918
+    Feature 128: -1.13545
+    Feature 106: -1.13279
+    Feature 54: 1.07578
+    Feature 77: -1.06447
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.17245
+
+==========Processing best model for RBF Support Vector Classifier==========
+
+
+-----Quick Model Summary-----
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.50000
+
+==========Processing best model for Polynomial Support Vector Classifier==========
+
+
+-----Quick Model Summary-----
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.50000
+
+==========Processing best model for Sigmoid Support Vector Classifier==========
+
+
+-----Quick Model Summary-----
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.40000
+
+==========Processing best model for Simple Decision Tree==========
+
+
+-----Quick Model Summary-----
+**Top 5 Feature Importances (Entropy Reduction):**
+    Feature 63: 0.23389
+    Feature 6: 0.15550
+    Feature 83: 0.05717
+    Feature 110: 0.05344
+    Feature 124: 0.04491
+    Feature 59: 0.04145
+    Feature 89: 0.03949
+    Feature 98: 0.02672
+    Feature 35: 0.02470
+    Feature 91: 0.02383
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.51775
+Sorry but RF is too complex to feasibly calculate Shaply values for
+Sorry but HGBC is too complex to feasibly calculate Shaply values for
+
+## 256 Dimensions
+
+--- Getting Training Data ---
+Successfully loaded Train data from CSV for 256 dims.
+--- Getting Test Data ---
+Successfully loaded Test data from CSV for 256 dims.
+
+==========Processing best model for Logistic Regression==========
+
+
+-----Quick Model Summary-----
+**Top 5 Largest Coefficients (Magnitude on Scaled Features):**
+    Feature 97: 0.65019
+    Feature 191: -0.54060
+    Feature 174: 0.51866
+    Feature 179: 0.47569
+    Feature 40: 0.47030
+    Feature 178: 0.46040
+    Feature 149: 0.43986
+    Feature 109: -0.43628
+    Feature 50: 0.42393
+    Feature 150: -0.41497
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.52290
+Sorry but MLP is too complex to feasibly calculate Shaply values for
+
+==========Processing best model for Linear Support Vector Classifier==========
+
+
+-----Quick Model Summary-----
+**Top 5 Largest Coefficients (Magnitude on Scaled Features):**
+    Feature 97: 0.18905
+    Feature 191: -0.15678
+    Feature 174: 0.15039
+    Feature 109: -0.13671
+    Feature 178: 0.13648
+    Feature 179: 0.13573
+    Feature 50: 0.13286
+    Feature 40: 0.13014
+    Feature 150: -0.11798
+    Feature 149: 0.11219
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.10416
+
+==========Processing best model for RBF Support Vector Classifier==========
+
+
+-----Quick Model Summary-----
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.50000
+
+==========Processing best model for Polynomial Support Vector Classifier==========
+
+
+-----Quick Model Summary-----
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.00000
+
+==========Processing best model for Sigmoid Support Vector Classifier==========
+
+
+-----Quick Model Summary-----
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.42000
+
+==========Processing best model for Simple Decision Tree==========
+
+
+-----Quick Model Summary-----
+**Top 5 Feature Importances (Entropy Reduction):**
+    Feature 149: 0.23673
+    Feature 191: 0.09935
+    Feature 97: 0.09008
+    Feature 30: 0.06045
+    Feature 61: 0.05906
+    Feature 139: 0.02973
+    Feature 143: 0.02015
+    Feature 103: 0.01705
+    Feature 179: 0.01556
+    Feature 128: 0.01400
+
+-----SHAP Value Computation-----
+SHAP Expected Value (Base Rate): 0.53638
+Sorry but RF is too complex to feasibly calculate Shaply values for
+Sorry but HGBC is too complex to feasibly calculate Shaply values for
+******************* Process Finished *******************

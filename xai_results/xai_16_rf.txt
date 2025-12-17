@@ -1,0 +1,16 @@
+==========Processing best model for Random Forest==========
+-----Quick Model Summary-----
+--- RF Feature Importance (Gini/Entropy) ---
+Feature 3      : 0.10099
+Feature 6      : 0.09444
+Feature 13     : 0.08791
+Feature 7      : 0.08085
+Feature 11     : 0.08081
+Feature 12     : 0.07986
+Feature 14     : 0.06680
+Feature 2      : 0.05542
+Feature 16     : 0.05382
+Feature 5      : 0.05380
+
+--- SHAP Value Computation ---
+SHAP Expected Value (Base Rate): 0.50973

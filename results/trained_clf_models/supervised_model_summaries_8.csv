@@ -1,0 +1,3 @@
+Model,Dimensions,Strategy,Kernel,C,Gamma
+Dummy,8,most_frequent,,,
+Sig-SVC,8,,sigmoid,7.183758655813988,0.0019777828512462727

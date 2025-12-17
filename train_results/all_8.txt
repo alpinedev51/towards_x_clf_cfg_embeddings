@@ -1,0 +1,35 @@
+Binary file analysis using Graph2Vec and classification
+--- SKIPPING STEP 1 (Assuming D2V models already exist in ./results/d2v_models/) ---
+******************* STEP: 2 Supervised classification training with hold-out validation. *******************
+Start supervised training
+
+======================================
+Processing models for 8 dimensions
+======================================
+--- Getting Training Data ---
+Successfully loaded Train data from CSV for 8 dims.
+--- Getting Testing Data ---
+Successfully loaded Test data from CSV for 8 dims.
+--- Training Dummy for 8 dimensions ---
+  Saved best Dummy model to results/trained_clf_models/Dummy/Dummy_model_8dims.pkl
+  Evaluating Dummy on test set...
+  Test Metrics: {'Accuracy': 0.5, 'Precision': 0.0, 'Recall': 0.0, 'F1-score': 0.0, 'ROC-AUC': 0.5, 'Model': 'Dummy', 'Dimensions': 8, 'CV-ROC-AUC': 0.5}
+--- Training LR for 8 dimensions ---
+  Best CV ROC-AUC: 0.8896
+  Best Hyperparameters: {'classifier__C': np.float64(6.366859160799429), 'classifier__penalty': 'l2', 'classifier__solver': 'saga'}
+  Saved best LR model to results/trained_clf_models/LR/LR_model_8dims.pkl
+  Evaluating LR on test set...
+  Test Metrics: {'Accuracy': 0.8415, 'Precision': 0.9012925969447708, 'Recall': 0.767, 'F1-score': 0.8287412209616424, 'ROC-AUC': 0.916547, 'Model': 'LR', 'Dimensions': 8, 'CV-ROC-AUC': np.float64(0.8896211111111111)}
+--- Training MLP for 8 dimensions ---
+  Best CV ROC-AUC: 0.9703
+  Best Hyperparameters: {'classifier__learning_rate_init': 0.001, 'classifier__hidden_layer_sizes': (128, 64, 32), 'classifier__batch_size': 32, 'classifier__alpha': 0.0001, 'classifier__activation': 'relu'}
+  Saved best MLP model to results/trained_clf_models/MLP/MLP_model_8dims.pkl
+  Evaluating MLP on test set...
+  Test Metrics: {'Accuracy': 0.9385, 'Precision': 0.9515962924819773, 'Recall': 0.924, 'F1-score': 0.9375951293759512, 'ROC-AUC': 0.985768, 'Model': 'MLP', 'Dimensions': 8, 'CV-ROC-AUC': np.float64(0.9703133333333334)}
+--- Training LSVC for 8 dimensions ---
+  Best CV ROC-AUC: 0.8883
+  Best Hyperparameters: {'classifier__C': np.float64(0.37253938395788866), 'classifier__penalty': 'l2'}
+  Saved best LSVC model to results/trained_clf_models/LSVC/LSVC_model_8dims.pkl
+  Evaluating LSVC on test set...
+  Test Metrics: {'Accuracy': 0.842, 'Precision': 0.9100719424460432, 'Recall': 0.759, 'F1-score': 0.8276990185387132, 'ROC-AUC': 0.9152210000000001, 'Model': 'LSVC', 'Dimensions': 8, 'CV-ROC-AUC': np.float64(0.8882922222222224)}
+--- Training RBF-SVC for 8 dimensions ---
